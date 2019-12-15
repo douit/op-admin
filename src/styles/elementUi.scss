@@ -1,0 +1,43 @@
+/**
+导航菜单
+ */
+.el-menu {
+  border-right: none;
+  background-color: $menu-bg-color;
+  .el-submenu__title,
+  .el-submenu__title i,
+  .el-menu-item,
+  .el-menu-item i {
+    color: $menu-text-color;
+  }
+  .el-menu-item,
+  .el-submenu__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .el-menu-item.is-active {
+    color: $menu-active-text-color;
+  }
+  .el-menu-item:hover,
+  .el-submenu__title:hover {
+    background-color: $menu-bg-color!important;
+  }
+  .el-menu-item:active,
+  .el-menu-item:focus,
+  .el-menu-item:visited {
+    color: rgb(64, 158, 255);
+    background-color: $menu-bg-color!important;
+  }
+  .el-submenu__icon-arrow {
+    color: #909399;
+  }
+  .el-submenu {
+    .el-menu-item {
+      background-color: $menu-bg-color!important;
+    }
+    .el-menu-item:hover {
+      background-color: $menu-bg-color!important;;
+    }
+  }
+}
